@@ -1,0 +1,12 @@
+#toptitle {
+    color: #2E9AFE;
+    
+}
+#navbar {
+    width: 10000px;
+    height: 100px;
+    background-color: lightblue;
+    padding: 0px;
+    margin-top: -22px;
+    margin-left: -8px;
+}
