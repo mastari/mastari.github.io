@@ -22,11 +22,6 @@
     height: 875px;
     width: 10px;
 }
-body {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url(file:///C:/Users/Ari/Dev/mastari.github.io/assets/tree.jpg)
-}
 #home {
     color: red;
     width: 50px;
