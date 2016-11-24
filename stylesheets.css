@@ -50,14 +50,14 @@ body {
 #logo {
     width: 60px;
     height: 60px;
-    margin-left: 1750px;
-    margin-top: -87px;
+    margin-left: 650px;
+    margin-top: -57px;
     float: left;
     display: block;
 }
 #navbar ul {
     padding-left: 750px;
-    margin-top: -100px;
+    margin-top: -71px;
 
 }
 #navbar ul li {
@@ -67,7 +67,7 @@ body {
     text-decoration: none;
     color: black;
     float: left;
-    padding: 50px;
+    padding: 20px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     display: block;
