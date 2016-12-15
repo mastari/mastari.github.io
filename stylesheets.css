@@ -1,78 +1,24 @@
-#megabox {
-    padding-top: 90px;
-    padding-left: 50px;
-}
-#toptitle {
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
-    padding-left: 500px;
-    padding-top: 5px; 
-}
-#navbar {
-    width: 1950px;
-    height: 80px;
-    background-color: #6f9acb;
-    margin-top: -15px;
-    margin-left: -8px;
-    padding-bottom: 0px;
-    position: static;
-    opacity: 0.9;
-}
-#test {
-    height: 875px;
-    width: 10px;
-}
-#home {
-    color: red;
-    width: 50px;
-    height: 50px;
-}
-#mastari-visuals {
-    width: 480px;
-    height: 75px;
-    margin-top: 2px;
-    margin-left: 60px;
-
+#navybar {
+    margin-left: 500px;
+    margin-top: 50px;
 }
 body {
-    background-color: #104E8B;
+    background-color: grey;
 }
-#homebox {
-    background-color: #4a6279;
-    width: 500px;
-    height: 225px;
-    border-radius: 5px;
+.navbar-nav > li{
+  margin-left:20px;
+  margin-right:20px;
 }
-#homebox-title {
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 10px;
+
+.navbar-nav li a {
+    line-height: 150px;
+    height: 150px;
+    padding-top: 0;
 }
-#logo {
-    width: 60px;
-    height: 60px;
-    margin-left: 545px;
-    margin-top: -57px;
-    float: left;
-    display: block;
-}
-#navbar ul {
-    padding-left: 750px;
-    margin-top: -71px;
+#logo_mastari {
+    width: 100px;
 
 }
-#navbar ul li {
-    list-style: none;
-}
-#navbar ul a li {
-    text-decoration: none;
-    color: black;
-    float: left;
-    padding: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    display: block;
-}
-#logoholder {
-    height: 60px;
-    width: 60px;
+#mastari_text {
+    font-size: 40px;
 }
