@@ -25,7 +25,7 @@ $( document ).ready(function() {
     $("#navy li a").css({
         "padding-bottom":  sHeight/20
     });
-$(window).resize(function() {
+$(document).resize(function() {
   //resize just happened, pixels changed
   location.reload();
 });
