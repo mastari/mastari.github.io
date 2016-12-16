@@ -14,7 +14,6 @@
     display: block;
     color: white;
     text-align: center;
-    padding: 30px 21px;
     text-decoration: none;
     font-family: Helvetica;
 }
@@ -34,14 +33,14 @@ background-color:dimgrey;
     display: block;
     color: white;
     text-align: center;
-    padding: 20px 20px;
     text-decoration: none;
     font-family: Helvetica;
     font-size: 25px;
+    padding: 20px 20px 20px 20px;
 }
 #logo {
     width: 70px;
 }
 body {
-    background-color: 
+
 }
