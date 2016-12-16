@@ -9,5 +9,8 @@ $( document ).ready(function() {
     $("#bar").css({
         "width": sWidth
     });
+    $("#logo").css({
+        "margin-right": sWidth/58
+    });
 });
 
