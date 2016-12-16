@@ -23,7 +23,7 @@ $( document ).ready(function() {
         "padding-left": sWidth/91.4285714
     });
     $("#navy li a").css({
-        "padding-bottom":  sHeight/42.1538462
+        "padding-bottom":  sHeight/3.1538462
     });
 });
 
