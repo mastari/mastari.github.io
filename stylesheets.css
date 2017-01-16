@@ -7,3 +7,10 @@
 .navbar-right {
     font-size: 12px;
 }
+.pagecontent {
+    margin: 50px;
+    margin-top: 150px;
+}
+#welcome {
+    padding: 10px;
+}
