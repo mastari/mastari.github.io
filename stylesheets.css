@@ -1,49 +1,6 @@
-#navy {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-}
 
-#navy li {
-    float: left;
-}
-
-#navy li a {
-    display: block;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    font-family: Helvetica;
-}
-
-#navy a:hover:not(.active) {
-    background-color: #111;
-}
-
-.active {
-background-color:dimgrey;
-}
-#bar {
-    background-color: #333;
-    margin: 0px;
-}
-#logo_text {
-    display: block;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    font-family: Helvetica;
-    font-size: 25px;
-    padding: 20px 20px 20px 20px;
-}
-#logo {
-    width: 70px;
-}
-body {
-
-}
 nav {
     font-family: Arial, Helvetica, sans-serif;
 }
+.navbar {min-height: 80px;}
+.navbar-brand {padding: 0 15px; height: 80px; line-height: 80px;}
