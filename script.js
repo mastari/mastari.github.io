@@ -25,9 +25,29 @@ $( document ).ready(function() {
     $("#navy li a").css({
         "padding-bottom":  sHeight/20
     });
-$(document).resize(function() {
+  $(window).resize(function() {
+       $('.center').css({
+    "margin-left": centerH
+    });
   //resize just happened, pixels changed
-  location.reload();
+    $("#bar").css({
+        "width": sWidth
+    });
+    $("#logo").css({
+        "margin-right": sWidth/58
+    });
+    $("#navy li a").css({
+        "padding-top": sWidth/64
+    });
+    $("#navy li a").css({
+        "padding-right": sWidth/91.4285714
+    });
+    $("#navy li a").css({
+        "padding-left": sWidth/91.4285714
+    });
+    $("#navy li a").css({
+        "padding-bottom":  sHeight/20
+    });
 });
 });
 
