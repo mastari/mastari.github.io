@@ -1,3 +1,6 @@
 #soc_icon {
     word-spacing: 1.1em;
 }
+.nav navbar-nav navbar-right {
+    margin-right: 50px;
+}
