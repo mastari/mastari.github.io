@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <title>{{ page.title }}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    </head>
+    <body>
+
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Mastari</a>
+          </div>
+
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="/">Home</a></li>
+
+              <li><a href="/blogs.html">Blog</a></li>
+
+              <li><a href="/about.html">About</a></li>
+            </ul>
+            <ul class="nav navbar-nav">
+
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="YOUTUBE LINK HERE" target="_blank">Youtube</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <br><br><br>
+      <div class="container">
+
+          <h2 class="entry-title">
+            {% if page.title %}
+
+              {{ page.title }}
+              <small> {{ page.date | date: "%m/%d/%y"}} </small>
+            {% endif %}
+          </h2>
+          {% if page.version %}
+
+          {{ page.version }}
+
+          {% endif %}
+        <br>
+          <p>{{ content }}</p>
+          {% if page.comments %}
+          <br><br><br><br><br>
+
+          <div class="well well-lg">
+            <div id="disqus_thread"></div>
+            <script>
+            (function() {
+            var d = document, s = d.createElement('script');
+            s.src = 'https://noahsoath.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+            })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+          </div>
+          {% endif %}
+      </div>
+    </body>
+    <style>
+    p {
+    line-height: 30px;
+}
+</style>
+</html>

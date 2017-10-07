@@ -1,0 +1,13 @@
+---
+layout: default
+comments: false
+---
+<div class="">
+<div class="page-header">
+<h2 class="entry-title">Latest Post</h2>
+</div>
+<div class="blog-index">
+  {% assign post = site.posts.first %}
+  {% assign content = post.content | strip_html | truncatewords: 100 %}
+  {% include post_detail.html %}
+</div>
