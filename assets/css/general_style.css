@@ -1,0 +1,25 @@
+.display_divider {
+        height: 1px;
+    width: 40%;
+    border: 0 none;
+    background-color:#a1a3a8;
+    margin-bottom: 30px;
+}
+.display_content {
+    font-size: 18px;
+    margin-right: 20%;
+    margin-left: 20%;
+    min-width: 180px;
+    text-align: center;
+}
+.display_title {
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    color: #2b0a0a;
+}
+.display_title:hover {
+    text-decoration: none;
+    color: #2b0a0a;
+}

@@ -7,6 +7,9 @@
         <title>{{ page.title }}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+        <link rel="stylesheet" type="text/css" href="/../assets/css/post_style.css" />
+        <link rel="stylesheet" type="text/css" href="/../assets/css/general_style.css" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
     </head>
     <body>
 
@@ -34,37 +37,16 @@
 
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="YOUTUBE LINK HERE" target="_blank">Youtube</a></li>
+                <li><a href="YOUTUBE LINK HEREf" target="_blank">Youtube</a></li>
             </ul>
           </div>
         </div>
       </nav>
-      <br><br><br>
+      <br><br><br><br>
       <div class="container">
-
-          <h2 class="entry-title">
-            {% if page.title %}
-
-              {{ page.title }}
-              <small> {{ page.date | date: "%m/%d/%y"}} </small>
-            {% endif %}
-          </h2>
-          {% if page.version %}
-
-          {{ page.version }}
-
-          {% endif %}
-        <br>
-          <p>{{ content }}</p>
-          {% if page.comments %}
-          <br><br><br><br><br>
-          </div>
-          {% endif %}
+        
+          {{ content }}
       </div>
     </body>
-    <style>
-    p {
-    line-height: 30px;
-}
-</style>
 </html>
+<!--HOMEPAGE LAYOUT-->

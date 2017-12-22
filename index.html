@@ -1,11 +1,12 @@
 ---
 layout: default
 ---
-<div class="page-header">
-<h2 class="entry-title">Latest Post</h2>
-</div>
+
+<h2 class="entry-title"><strong>Latest Post</strong></h2>
+<hr class="display_divider">
 <div class="blog-index">
   {% assign post = site.posts.first %}
-  {% assign content = post.content | strip_html | truncatewords: 100 %}
+  {% assign content = post.content | strip_html | truncatewords: 50 %}
   {% include post_detail.html %}
 </div>
+<!--HOMEPAGE CONTENT-->

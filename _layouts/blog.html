@@ -7,6 +7,9 @@
         <title>{{ page.title }}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+        <link rel="stylesheet" type="text/css" href="/../assets/css/post_style.css" />
+        <link rel="stylesheet" type="text/css" href="/../assets/css/general_style.css" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
     </head>
     <body>
 
@@ -34,42 +37,29 @@
 
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="https://github.com/mastari/Noah-s-Oath" target="_blank">Youtube</a></li>
+                <li><a href="YOUTUBEHEREf" target="_blank">Youtube</a></li>
             </ul>
           </div>
         </div>
       </nav>
-
+    <div class="blog_post_container">
       <div class="container">
-
           <h2 class="entry-title">
             {% if page.title %}
-
+            <span class="blog_title">
+          <strong>
               {{ page.title }}
-              <small> {{ page.date | date: "%m/%d/%y"}} </small>
-              <br>
-              <small>{{ page.author }}</small>
+          </strong>
+            
             {% endif %}
+            <br> <!--ExtraStuff VVVV-->
+                          <div class="blog_info">Posted by <span class="authorname">{{ page.author }}</span> / On {{ page.date | date_to_long_string }}</div>
+                          </span>
           </h2>
-        <br><br>
-        <div>
-          <p>{{ content }}</p>
-        </div>
-          {% if page.comments %}
-          <br><br><br><br><br>
-
-          {% endif %}
+                        <hr class="blog_divider"> </hr>
+          <div class="blog_content">{{ content }}</div>
       </div>
+    </div>
     </body>
-    <style>
-p {
-line-height: 30px;
-font-size: 16px;
-}
-img {
-  display: block;
-      margin-left: auto;
-      margin-right: auto
-}
-    </style>
 </html>
+<!--ACTUAL BLOG POST LAYOUT -->

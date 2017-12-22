@@ -1,0 +1,39 @@
+.blog_post_container  {
+      line-height: 24px;
+      font-size: 15px;
+      font-family: sans-serif;
+}
+.blog_info {
+    color: #686a6d;
+    margin-top: 5px;
+    font-size: 16px;
+}
+.authorname {
+    color: #8e1d1d;
+    font-size: 17px;
+}
+.blog_title {
+    text-align: center;
+}
+.blog_divider {
+    height: 2px;
+    width: 30%;
+    border: 0 none;
+    background-color:#ad2424;
+    margin-bottom: 30px;
+}
+.entry-title {
+ text-align: center;
+}
+.blog_seg {
+    text-align: center;
+    font-size: 20px;
+}
+.blog_text {
+    font-size: 17px;
+}
+.blog_content {
+    margin-left: 15%;
+    margin-right: 15%;
+    min-width: 240px;
+}
