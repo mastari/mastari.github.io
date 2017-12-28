@@ -42,6 +42,8 @@
           </div>
         </div>
       </nav>
+      <br>
+    <div class="blog_box">
     <div class="blog_post_container">
           <h2 class="entry-title">
             {% if page.title %}
@@ -49,15 +51,21 @@
           <strong>
               {{ page.title }}
           </strong>
-            
+                                      </span>
             {% endif %}
             <br> <!--ExtraStuff VVVV-->
-                          <div class="blog_info">Posted by <span class="authorname">{{ page.author }}</span> / On {{ page.date | date_to_long_string }}</div>
-                          </span>
+            
+                          <div class="blog_info">Posted by <span class="authorname"><span class="authorweight">{{ page.author }}</span></span> / On {{ page.date | date_to_long_string }}</div>
           </h2>
                         <hr class="blog_divider"> </hr>
           <div class="blog_content">{{ content }}</div>
+          <div class="post_button"> <a href="#"><< Last Post</a>or<a href="#">Next Post >></a><br><br></div>
+
     </div>
+        <div class="blog_extra">
+          <div class="extra_title">What I am working on now</div>
+          <div class="extra_content"><a href="#">Current Projects</a></div>
+        </div>
       </div>
     </body>
 </html>
