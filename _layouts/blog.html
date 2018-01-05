@@ -12,9 +12,8 @@
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
     </head>
     <body>
-
+<!--
       <nav class="navbar navbar-inverse">
-        <div class="container">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
               <span class="sr-only">Toggle navigation</span>
@@ -39,9 +38,17 @@
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="YOUTUBEHEREf" target="_blank">Youtube</a></li>
             </ul>
-          </div>
         </div>
       </nav>
+    -->
+<div id="navbar">
+  <div class="navitem"><a class="active" href="/">Home</a></div>
+  <div class="navitem"><a href="/blogs.html">Blog</a></div>
+  <div class="navitem"><a href="/projects.html">Projects</a></div>
+  <div id="aboutitem"><a href="/about.html">About</a></div>
+  <div id="dropdown"><a href="#">Dropdown</a></div>
+</div>
+
       <br>
     <div class="blog_box">
     <div class="blog_post_container">
@@ -62,11 +69,30 @@
           <div class="post_button"> <a href="#"><< Last Post</a>or<a href="#">Next Post >></a><br><br></div>
 
     </div>
-        <div class="blog_extra">
-          <div class="extra_title">What I am working on now</div>
-          <div class="extra_content"><a href="#">Current Projects</a></div>
-        </div>
+        <div class="blog_extra"><br>
+          <div class="extra_container">
+            <div class="extra_title">Jump to the</div>
+            <div class="extra_content post_jump"><a href="{{page.previous.url}}" class="btn btn-primary btn-md"><< Last Post</a> <a href="{{page.next.url}}" class="btn btn-primary btn-md">Next Post >></a></div>
+            <div class="extra_title">What I am working on now</div>
+            <div class="extra_content post_jump"><a href="#" class="btn btn-primary btn-md">Current Projects</a></div>
+          </div>
+          <br>
+        </div><br><br>
       </div>
     </body>
 </html>
 <!--ACTUAL BLOG POST LAYOUT -->
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>

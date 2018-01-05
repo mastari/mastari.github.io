@@ -24,7 +24,37 @@
     color: #2b0a0a;
 }
 .element_container {
+    margin-right: 20%;
+    margin-right: 20%;
+}
+.blog_list_items {
+    padding: 5px;
+}
+.blogs_container {
+    margin-left: 14%;
+    padding-right: 14%;
+}
+.blog_list_header {
+    color: #1e3356;
     text-align: center;
-    margin-right: 20%;
-    margin-right: 20%;
+    font-family: 'Lato', sans-serif;
+}
+.blog_list_header_divider {
+    height: 1.5px;
+    float: center;
+    width: 200px;
+    border: 0 none;
+    background-color:#1e3356;
+    margin-bottom: 10px;
+}
+.blog_list_divider {
+    height: 1px;
+    float: left;
+    width: 100%;
+    border: 0 none;
+    background-color:#7d8799;
+    margin-bottom: 10px;
+}
+.lead {
+    font-family: 'Lato', sans-serif;
 }

@@ -1,6 +1,19 @@
 ---
-layout: default
+layout: home
 ---
+<div class="header">
+  <img src="../assets/img/logo.png" class="logo"/>
+</div>
+
+<div id="navbar">
+  <div class="navitem"><a class="active" href="/">Home</a></div>
+  <div class="navitem"><a href="/blogs.html">Blog</a></div>
+  <div class="navitem"><a href="/projects.html">Projects</a></div>
+  <div id="aboutitem"><a href="/about.html">About</a></div>
+  <div id="dropdown"><a href="#">Dropdown</a></div>
+</div>
+<br>
+<div id="homepagecontent">
 <h2 class="entry-title"><strong>Latest Post</strong></h2>
 <hr class="display_divider">
 <div class="blog-index">
@@ -8,4 +21,41 @@ layout: default
   {% assign content = post.content | strip_html | truncatewords: 50 %}
   {% include post_detail.html %}
 </div>
+<h1>Pie</h1>
+<h1>Pie</h1>
+<h1>Pie</h1>
+<h1>Pie</h1>
+<h1>Pie</h1>
+<h1>Pie</h1>
+<h1>Pie</h1>
+<h1>Pie</h1>
+<h1>Pie</h1>
+<h1>Pie</h1>
+<h1>Pie</h1>
+<h1>Pie</h1>
+<h1>Pie</h1>
+<h1>Pie</h1>
+<h1>Pie</h1>
+</div>
 <!--HOMEPAGE CONTENT-->
+<script>
+  window.onscroll = function() {myFunction()};
+
+// Get the navbar
+var navbar = document.getElementById("navbar");
+var homepage = document.getElementById("homepagecontent");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky");
+    homepage.classList.add("fixglitch");
+  } else {
+    navbar.classList.remove("sticky");
+    homepage.classList.remove("fixglitch");
+  }
+}
+  </script>

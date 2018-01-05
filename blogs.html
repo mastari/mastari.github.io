@@ -1,17 +1,22 @@
 ---
-layout: default
+layout: bloglist
 title: Blogs
 ---
 
+<div class="blogs_container">
+<h1 class="blog_list_header">Blog Posts</h1>
+<hr class="blog_list_header_divider"> </hr><br>
+<div class="blog_list">
 {% for post in site.posts %}
-  <div class="page-header">
+  <div class="blog_list_items">
     <h2><a href="{{ BASE_PATH }}{{ post.url }}"><span class="display_title">{{ post.title }}</span></a></h2>
     <div class="blog_info">Posted by <span class="authorname">{{ post.author }}</span> / On {{ post.date | date_to_long_string}} </div>
   <p class="lead">{{ post.content | strip_html | truncatewords:20 }}</p> 
   <a href="{{ post.url }}" class="btn btn-primary btn-sm">Read More</a><br><br>
-  </div>
+  </div><hr class="blog_list_divider"><br>
 {% endfor %}
-
+</div>
+</div>
 <!-- {% for post in site.posts %}
   <a href="{{ post.url }}" class="btn btn-default">{{ post.title }}</a><br>
 {% endfor %} -->
