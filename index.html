@@ -1,61 +1,51 @@
 ---
 layout: home
 ---
-<div class="header">
-  <img src="../assets/img/logo.png" class="logo"/>
-</div>
-
-<div id="navbar">
-  <div class="navitem"><a class="active" href="/">Home</a></div>
-  <div class="navitem"><a href="/blogs.html">Blog</a></div>
-  <div class="navitem"><a href="/projects.html">Projects</a></div>
-  <div id="aboutitem"><a href="/about.html">About</a></div>
-  <div id="dropdown"><a href="#">Dropdown</a></div>
-</div>
-<br>
-<div id="homepagecontent">
-<h2 class="entry-title"><strong>Latest Post</strong></h2>
-<hr class="display_divider">
-<div class="blog-index">
-  {% assign post = site.posts.first %}
-  {% assign content = post.content | strip_html | truncatewords: 50 %}
-  {% include post_detail.html %}
-</div>
-<h1>Pie</h1>
-<h1>Pie</h1>
-<h1>Pie</h1>
-<h1>Pie</h1>
-<h1>Pie</h1>
-<h1>Pie</h1>
-<h1>Pie</h1>
-<h1>Pie</h1>
-<h1>Pie</h1>
-<h1>Pie</h1>
-<h1>Pie</h1>
-<h1>Pie</h1>
-<h1>Pie</h1>
-<h1>Pie</h1>
-<h1>Pie</h1>
-</div>
-<!--HOMEPAGE CONTENT-->
-<script>
-  window.onscroll = function() {myFunction()};
-
-// Get the navbar
-var navbar = document.getElementById("navbar");
-var homepage = document.getElementById("homepagecontent");
-
-// Get the offset position of the navbar
-var sticky = navbar.offsetTop;
-
-// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky");
-    homepage.classList.add("fixglitch");
-  } else {
-    navbar.classList.remove("sticky");
-    homepage.classList.remove("fixglitch");
-  }
-}
-  </script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>mastari.net</title>
+</head>
+<body>
+    <div class="master">
+    <nav class="nav">
+        <ul>
+            <li><a class="nitem" href="/">MASTARI</a></li>
+            <li><a class="nitem" href="/">HOME</a></li>
+            <li><a class="nitem" href="/blogs.html">BLOG</a></li>
+            <li><a class="nitem" href="/about.html">ABOUT</a></li>
+        </ul>
+    </nav>
+    <div class="page"> 
+        <div class="featurespan">
+            <div class="featurecontent">
+                <br>
+                <div class="featureinfo">
+                    <span class="featuretitle">Math, Science, and Visuals</span>
+                    <p class="featuretext">Exploration and innovation thrive on them.</p>
+                    <div class="featurebutton">Learn More</div>
+                </div>
+                <div class="featureimgholder">
+                    <img src="./assets/img/topart.png" class="featureimg"/>
+                </div>
+            </div>
+        </div>
+        <div class="content"><br><br>
+                <span class="latestpost_title">Latest Posts</span>
+            <div class="latestposts">
+                    {% for post in site.posts limit:5 %}
+                    <a class="filecard" href="{{ BASE_PATH }}{{ post.url }}">
+                        <div class="cardtitle"><p>{{ post.title }}</p></div>
+                        <div class="cardcontent">{{ post.content | strip_html | truncatewords:20 }}</div>
+                    </a>
+                    {% endfor %}
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
