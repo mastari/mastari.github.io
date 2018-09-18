@@ -18,7 +18,7 @@ function keyReleased() {
 }
 
 function setup() {
-  createCanvas(Math.round(window.innerWidth/40)*40,Math.round(screen.height*40)/40)
+  createCanvas(Math.round(window.innerWidth*40)/40,Math.round(screen.height*40)/40)
 }
 function draw() {
   translate(transx,transy);
