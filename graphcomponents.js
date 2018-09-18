@@ -47,8 +47,8 @@ var points = [];
 function mousePressed() {
   let xpos, ypos;
   if(isShift) {
-    xpos = (mouseX-transx)/spacing; //Translates to grid space
-    ypos = (mouseY-transy)/spacing;
+    xpos = Math.round((mouseX-transx)/spacing * 4)/4;
+    ypos = Math.round((mouseY-transy)/spacing * 4)/4;
   } else {
     xpos = Math.round((mouseX-transx)/spacing); //Translates to grid space
     ypos = Math.round((mouseY-transy)/spacing);
