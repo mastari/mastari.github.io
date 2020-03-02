@@ -1,0 +1,54 @@
+.navbar {
+  display: flex;
+  position: fixed;
+  flex-direction: row;
+  justify-content: center;
+  height: 85px;
+  width: 100vw;
+  background-color: rgba(249, 249, 249, 0.959);
+  border-bottom: 0.5px solid rgb(219, 219, 219);
+}
+
+.brandlogo {
+  width: 100px;
+  align-self: center;
+}
+
+.navitems {
+  display: inline-flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  width: 100%;
+}
+
+.navitems>a {
+  text-decoration: none;
+  align-self: center;
+}
+
+.navitems>a>li {
+  display: inline-flex;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 18px;
+  color: rgb(97, 97, 97);
+  font-weight: 600;
+}
+
+.activeitem {
+  color: rgb(0, 121, 219);
+}
+
+.contactnav {
+  align-self: center;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.contactnav>a {
+  text-decoration: none;
+  font-size: 18px;
+  color: rgb(97, 97, 97);
+  font-weight: 600;
+}

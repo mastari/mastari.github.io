@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i&display=swap");
+@import url("https://use.typekit.net/thy6bhp.css");
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  height: 100vh;
+  font-family: proxima-nova, sans-serif;
+}
+
+.pagecontainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (min-width: 0px) {
+  .content_container {
+    width: 90vw;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .content_container {
+    width: 576px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .content_container {
+    width: 750px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .content_container {
+    width: 950px;
+  }
+}
+
+@media screen and (min-width: 1250px) {
+  .content_container {
+    width: 1200px;
+  }
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 85px;
+  width: 100vw;
+  background-color: rgba(249, 249, 249, 0.959);
+  border-bottom: 0.5px solid #dbdbdb;
+}
+
+.brandlogo {
+  width: 100px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.navitems {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+}
+
+.navitems > a {
+  text-decoration: none;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.navitems > a > li {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 18px;
+  color: #616161;
+  font-weight: 600;
+}
+
+.activeitem {
+  color: #0079db;
+}
+
+.contactnav {
+  -ms-flex-item-align: center;
+      align-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.contactnav > a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #616161;
+  font-weight: 600;
+}
+
+.pageheader {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  color: #1f1f1f;
+  margin-top: 80px;
+  padding: 20px;
+}
+
+.leftpageheader {
+  width: 500px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.leftpageheader > h1 {
+  line-height: 0.7em;
+  font-size: 40px;
+}
+
+.leftpageheader > div {
+  line-height: 1.5em;
+  font-size: 20px;
+}
+
+.rightpageheader {
+  width: 500px;
+  margin-left: 50px;
+}
+
+.rightpageheader > img {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.ourmissioncontainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.ourmissiontitle {
+  text-align: center;
+  line-height: 0.7em;
+  padding: 30px;
+}
+
+.ourmissiontitle > p {
+  font-size: 20px;
+}
+
+.threesplit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.threesplit > div {
+  width: 25%;
+  padding: 20px;
+  border-radius: 20px;
+  border: 1px solid #e4e4e4;
+}
+
+.threesplit > div > h2 {
+  text-align: center;
+  font-weight: 800;
+}
+
+.threesplit > div > p {
+  line-height: 1.8em;
+}
+/*# sourceMappingURL=main.css.map */

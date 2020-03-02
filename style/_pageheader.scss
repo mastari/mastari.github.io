@@ -1,0 +1,80 @@
+.pageheader {
+  flex-direction: row;
+  color: rgb(31, 31, 31);
+  margin-top: 80px;
+  padding: 20px;
+}
+
+.leftpageheader {
+  width: 500px;
+  align-self: center;
+
+  &>h1 {
+    line-height: 0.7em;
+    font-size: 40px;
+  }
+
+  &>div {
+    line-height: 1.5em;
+    font-size: 20px;
+  }
+}
+
+.rightpageheader {
+  width: 500px;
+  margin-left: 50px;
+
+  &>img {
+    margin-top: 20px;
+    width: 100%;
+  }
+}
+
+.ourmissioncontainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.ourmissiontitle {
+  text-align: center;
+  line-height: 0.7em;
+  padding: 30px;
+
+  &>p {
+    font-size: 20px;
+  }
+}
+
+.threesplit {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  &>div {
+    width: 25%;
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid rgb(228, 228, 228);
+  }
+
+  &>div>h2 {
+    text-align: center;
+    font-weight: 800;
+  }
+
+  &>div>p {
+    line-height: 1.8em;
+  }
+}
+
+// .studentbox {
+//   background-color: rgba(15, 64, 156, 0.103);
+// }
+
+// .teacherbox {
+//   background-color: rgba(156, 15, 15, 0.103);
+// }
+
+// .parentbox {
+//   background-color: rgba(10, 182, 4, 0.103);
+// }
