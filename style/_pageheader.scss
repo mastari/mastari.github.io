@@ -3,30 +3,65 @@
   color: rgb(31, 31, 31);
   margin-top: 80px;
   padding: 20px;
+  padding-bottom: 0px;
+  ;
+
+  @media screen and (max-width:1000px) {
+    flex-direction: column;
+  }
+
 }
 
 .leftpageheader {
   width: 500px;
   align-self: center;
+  padding-top: 40px;
 
   &>h1 {
-    line-height: 0.7em;
+    line-height: 1.3em;
     font-size: 40px;
+
+    @media screen and (max-width:1000px) {
+      font-size: 25px;
+      text-align: center;
+    }
   }
+
+
+  @media screen and (max-width:1000px) {
+    width: 100%;
+    padding-top: 15px;
+  }
+
 
   &>div {
     line-height: 1.5em;
     font-size: 20px;
+
   }
+
 }
 
 .rightpageheader {
   width: 500px;
   margin-left: 50px;
+  align-self: center;
 
   &>img {
     margin-top: 20px;
     width: 100%;
+
+    @media screen and (max-width:576px) {
+      margin: 0px;
+    }
+  }
+
+  @media screen and (max-width:1000px) {
+    margin: 0px;
+  }
+
+  @media screen and (max-width:576px) {
+    width: 300px;
   }
 }
 
@@ -37,11 +72,13 @@
 
 .ourmissiontitle {
   text-align: center;
-  line-height: 0.7em;
   padding: 30px;
+  font-size: 21px;
 
-  &>p {
-    font-size: 20px;
+  @media screen and (max-width:800px) {
+    font-size: 15.5px;
+    text-align: center;
+    padding: 0px;
   }
 }
 
@@ -50,11 +87,20 @@
   flex-direction: row;
   justify-content: space-between;
 
+  @media screen and (max-width:1000px) {
+    flex-direction: column;
+  }
+
   &>div {
     width: 25%;
     padding: 20px;
     border-radius: 20px;
-    border: 1px solid rgb(228, 228, 228);
+
+    @media screen and (max-width:1000px) {
+      width: 75%;
+      align-self: center;
+      margin: 30px;
+    }
   }
 
   &>div>h2 {
@@ -67,14 +113,17 @@
   }
 }
 
-// .studentbox {
-//   background-color: rgba(15, 64, 156, 0.103);
-// }
+.studentbox {
+  border: 1px solid;
+  border-color: rgba(0, 89, 255, 0.185);
+}
 
-// .teacherbox {
-//   background-color: rgba(156, 15, 15, 0.103);
-// }
+.teacherbox {
+  border: 1px solid;
+  border-color: rgba(18, 145, 12, 0.185);
+}
 
-// .parentbox {
-//   background-color: rgba(10, 182, 4, 0.103);
-// }
+.parentbox {
+  border: 1px solid;
+  border-color: rgba(199, 7, 224, 0.185);
+}

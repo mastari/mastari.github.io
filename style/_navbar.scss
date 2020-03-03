@@ -34,6 +34,10 @@
   font-size: 18px;
   color: rgb(97, 97, 97);
   font-weight: 600;
+
+  @media screen and (max-width : 800px) {
+    display: none;
+  }
 }
 
 .activeitem {
@@ -42,9 +46,12 @@
 
 .contactnav {
   align-self: center;
-  display: flex;
-  justify-content: flex-end;
+
+  @media screen and (max-width : 800px) {
+    display: none;
+  }
 }
+
 
 .contactnav>a {
   text-decoration: none;

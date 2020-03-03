@@ -115,19 +115,26 @@ body {
   font-weight: 600;
 }
 
+@media screen and (max-width: 800px) {
+  .navitems > a > li {
+    display: none;
+  }
+}
+
 .activeitem {
   color: #0079db;
 }
 
 .contactnav {
   -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
       align-self: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+}
+
+@media screen and (max-width: 800px) {
+  .contactnav {
+    display: none;
+  }
 }
 
 .contactnav > a {
@@ -145,6 +152,16 @@ body {
   color: #1f1f1f;
   margin-top: 80px;
   padding: 20px;
+  padding-bottom: 0px;
+}
+
+@media screen and (max-width: 1000px) {
+  .pageheader {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .leftpageheader {
@@ -152,11 +169,26 @@ body {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  padding-top: 40px;
 }
 
 .leftpageheader > h1 {
-  line-height: 0.7em;
+  line-height: 1.3em;
   font-size: 40px;
+}
+
+@media screen and (max-width: 1000px) {
+  .leftpageheader > h1 {
+    font-size: 25px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .leftpageheader {
+    width: 100%;
+    padding-top: 15px;
+  }
 }
 
 .leftpageheader > div {
@@ -167,11 +199,32 @@ body {
 .rightpageheader {
   width: 500px;
   margin-left: 50px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .rightpageheader > img {
   margin-top: 20px;
   width: 100%;
+}
+
+@media screen and (max-width: 576px) {
+  .rightpageheader > img {
+    margin: 0px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .rightpageheader {
+    margin: 0px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .rightpageheader {
+    width: 300px;
+  }
 }
 
 .ourmissioncontainer {
@@ -186,12 +239,16 @@ body {
 
 .ourmissiontitle {
   text-align: center;
-  line-height: 0.7em;
   padding: 30px;
+  font-size: 21px;
 }
 
-.ourmissiontitle > p {
-  font-size: 20px;
+@media screen and (max-width: 800px) {
+  .ourmissiontitle {
+    font-size: 15.5px;
+    text-align: center;
+    padding: 0px;
+  }
 }
 
 .threesplit {
@@ -207,11 +264,29 @@ body {
           justify-content: space-between;
 }
 
+@media screen and (max-width: 1000px) {
+  .threesplit {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .threesplit > div {
   width: 25%;
   padding: 20px;
   border-radius: 20px;
-  border: 1px solid #e4e4e4;
+}
+
+@media screen and (max-width: 1000px) {
+  .threesplit > div {
+    width: 75%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin: 30px;
+  }
 }
 
 .threesplit > div > h2 {
@@ -221,5 +296,59 @@ body {
 
 .threesplit > div > p {
   line-height: 1.8em;
+}
+
+.studentbox {
+  border: 1px solid;
+  border-color: rgba(0, 89, 255, 0.185);
+}
+
+.teacherbox {
+  border: 1px solid;
+  border-color: rgba(18, 145, 12, 0.185);
+}
+
+.parentbox {
+  border: 1px solid;
+  border-color: rgba(199, 7, 224, 0.185);
+}
+
+.container {
+  display: none;
+  cursor: pointer;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    display: inline-block;
+  }
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #1b1b1b;
+  margin: 6px 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
 }
 /*# sourceMappingURL=main.css.map */
