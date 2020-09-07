@@ -1,100 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
+---
+layout: page.hbs
+pageTitle: Cation Lion
+---
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Okayfive - Home</title>
-  <link rel="stylesheet" href="style/main.css" />
-</head>
-
-<body>
-  <div class="pagecontainer">
-    <div class="navbar">
-      <div class="content_container">
-        <img src="okrendrender.png" class="brandlogo">
-        <ul class="navitems">
-          <a href="#1">
-            <li><span class="activeitem">Home</span></li>
-          </a>
-          <a href="#2">
-            <li>Our Mission</li>
-          </a>
-          <a href="#2">
-            <li>Leadership</li>
-          </a>
-        </ul>
-        <div class="contactnav">
-          <a href="#3">
-            Contact
-          </a>
-        </div>
-        <div class="container" onclick="myFunction(this)">
-          <div class="bar1"></div>
-          <div class="bar2"></div>
-          <div class="bar3"></div>
-        </div>
-      </div>
-    </div>
-    <div class="pageheaderbg pagecontainer">
-      <div class="content_container pageheader">
-        <div class="leftpageheader">
-          <h1>Next level K-5 education is here</h1>
-          <div>Teaching with tech will never be the same. We unify adaptive learning,
-            class management, course design, and many more.
-
-
-          </div>
-        </div>
-        <div class="rightpageheader"><img src="Untitled.png" alt=""></div>
-      </div>
-    </div>
-    <div class="content_container ourmissioncontainer">
-      <div class="ourmissiontitle">
-        <h2>No student, teacher, or parent left behind.</h2>
-
-      </div>
-      <div class="threesplit">
-        <div class="studentbox">
-          <h2>Students</h2>
-          <p>Struggling in school can feel like you fell off a train and you're now lost in the woods.
-            Instead of letting students
-            fall behind further and further, we automatically deliver material that focuses
-            on each student's unique foundational misunderstandings. By doing this,
-            every student has the ability to reach their fullest potential.
-          </p>
-        </div>
-        <div class="teacherbox">
-          <h2>Teachers</h2>
-          <p>A virtual classroom that feels as
-            authentic as the real one. Here you can host your
-            own personal courses, lessons, and practice or even use
-            content from another teacher. We provide performance
-            results for each student that diagnoses weak points in
-            their understanding, so you can refine your instruction to
-            accommodate for that.
-          </p>
-        </div>
-        <div class="parentbox">
-          <h2>Parents</h2>
-          <p>For centuries, parents had to pry out what their
-            child learned in class with the classic "How was
-            school today?" Parents now have transparent access to
-            see exactly what their student is working on and how well
-            they are getting the material. On top of that, we also provide
-            robust analytics to show your child's progress over time.
-
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <p>Contact us at: ari@okayfive.com</p>
-</body>
-<script>
-  function myFunction(x) {
-    x.classList.toggle("change");
-  }
-</script>
-
-</html>
+<h1>Hey, I'm the <span>Cation Lion</span>.</h1>
+{% for post in collections.posts %}
+    <h2><a href="{{ post.url }}">{{ post.data.pageTitle }}</a></h2>
+    <em>{{ post.date | date: "%Y-%m-%d" }}</em>
+{% endfor %}
