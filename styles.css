@@ -1,6 +1,187 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Quicksand:wght@500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+html,
 body {
-    font-family: 'Noto Sans', sans-serif;
-    
+  font-family: 'Quicksand', sans-serif;
+  font-family: 'Bitter', serif;
+  margin: 0px;
+  padding: 0px;
+  background: #fcfcfc;
 }
+
+.page-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100vw;
+  height: 100vh;
+}
+
+.home-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.home-title {
+  text-align: center;
+  font-size: 35px;
+  margin: 30px;
+  font-weight: bold;
+}
+
+.home-title > span {
+  color: #df120b;
+}
+
+.home-title > span > span {
+  color: #ff8017;
+}
+
+.home-title > span > span > span {
+  color: #e7d916;
+}
+
+.home-title > span > span > span > span {
+  color: #47ca0a;
+}
+
+.home-title > span > span > span > span > span {
+  color: #0a6dca;
+}
+
+.home-title > span > span > span > span > span > span {
+  color: #8d0aca;
+}
+
+.side-navbar {
+  min-width: 295px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #f8f8f8;
+}
+
+.side-link {
+  width: 100%;
+  text-decoration: none;
+  color: black;
+}
+
+.side-link > div {
+  border-bottom: 1px solid #dfdfdf;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.side-link-right {
+  color: grey;
+}
+
+.side-content {
+  width: 100%;
+  border-right: 1px solid #dfdfdf;
+}
+
+.side-title {
+  color: #000000;
+  font-weight: bold;
+  margin-top: 20px;
+  font-size: 23px;
+  text-align: center;
+}
+
+.side-subtitle {
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+  font-size: 17px;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.side-colorbar {
+  width: 15px;
+  height: 100%;
+  background: #8d0e0a;
+}
+
+.content-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.home-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 1200px;
+  padding: 30px;
+  border: 2.5px solid #f1f1f1;
+  border-radius: 8px;
+  background: white;
+}
+
+.home-posts-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.post-card-link {
+  margin: 10px;
+  text-decoration: none;
+}
+
+.post-card {
+  color: black;
+  width: 300px;
+  height: 100px;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  border-color: #d6d6d6;
+  padding-left: 20px;
+}
+
+.post-card > em {
+  width: inherit;
+  color: #383838;
+}
+
+.home-post-header {
+  font-size: 35px;
+  text-align: center;
+}
+/*# sourceMappingURL=styles.css.map */
