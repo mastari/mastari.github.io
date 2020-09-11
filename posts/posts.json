@@ -1,4 +1,4 @@
 {
-  "layout": "page.hbs",
+  "layout": "post.hbs",
   "tags": ["posts"]
 }

@@ -13,8 +13,8 @@ pageTitle: mastari
       {% for post in collections.posts %}
       <a href="{{ post.url }}" class="post-card-link">
         <div class="post-card">
-          <h2>{{ post.data.pageTitle }}</h2>
-          <em>{{ post.date | date: "%d-%m-%Y" }}</em>
+          <h2>{{ post.data.postTitle }}</h2>
+          <em>{{ post.data.postDate }}</em>
         </div>
       </a>
       {% endfor %}

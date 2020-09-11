@@ -1,5 +1,7 @@
 ---
-pageTitle: First Yay!
+postTitle: First Yay!
+postDate: September 9, 2020
+postAuthor: Ari
 ---
 
 ### Really cool info
@@ -10,6 +12,9 @@ Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots 
 
 <style>
 #lion {
+  display:block;
   max-width:400px;
+  margin-left:auto;
+  margin-right:auto;
 }
 </style>
