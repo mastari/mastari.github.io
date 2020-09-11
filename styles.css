@@ -5,8 +5,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 html,
 body {
-  font-family: 'Quicksand', sans-serif;
-  font-family: 'Bitter', serif;
+  font-family: 'Bitter', serif;
   margin: 0px;
   padding: 0px;
   background: #fcfcfc;
@@ -274,11 +273,31 @@ body {
   width: 100%;
   margin-left: 100px;
   margin-right: 100px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Quicksand', sans-serif;
+  line-height: 25px;
 }
 
 img {
   width: 100%;
+}
+
+.postTitle {
+  text-align: center;
+  font-weight: bold;
+  font-size: 35px;
+  font-family: 'Bitter', serif;
+  line-height: normal;
+  margin-top: 30px;
+}
+
+.postDate {
+  text-align: center;
+  color: grey;
+  font-family: 'Bitter', serif;
+}
+
+.postAuthor {
+  text-align: right;
 }
 
 @media (max-width: 1000px) {
@@ -299,10 +318,16 @@ img {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 700px) {
   .content {
     margin-left: 19px;
     margin-right: 19px;
+  }
+}
+
+@media (max-width: 550px) {
+  .top-subtitle {
+    display: none;
   }
 }
 /*# sourceMappingURL=styles.css.map */
