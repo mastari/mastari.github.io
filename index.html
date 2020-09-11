@@ -3,18 +3,18 @@ layout: page.hbs
 pageTitle: mastari
 ---
 <div class="home-page">
-  <div class="home-title">Enter, my
-    <span>d<span>r<span>e<span>a<span>m<span>s</span></span></span></span></span></span></div>
+  <div class="home-title">my
+    <span>D<span>R<span>E<span>A<span>M<span>S</span></span></span></span></span></span></div>
   <div class="home-container">
-    <div class="home-post-header">
+    <!-- <div class="home-post-header">
       Blog stuff
-    </div>
+    </div> -->
     <div class="home-posts-container">
       {% for post in collections.posts %}
       <a href="{{ post.url }}" class="post-card-link">
         <div class="post-card">
           <h2>{{ post.data.pageTitle }}</h2>
-          <em>{{ post.date | date: "%d/%m/%Y" }}</em>
+          <em>{{ post.date | date: "%d-%m-%Y" }}</em>
         </div>
       </a>
       {% endfor %}
