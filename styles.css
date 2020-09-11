@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Quicksand:wght@500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 html,
 body {
   font-family: 'Bitter', serif;
@@ -38,6 +39,7 @@ body {
   font-size: 35px;
   margin: 30px;
   font-weight: bold;
+  font-family: 'Bitter', serif;
 }
 
 .home-title > span {
@@ -190,7 +192,6 @@ body {
   padding-left: 20px;
   padding: 30px;
   border: 1px solid #b9b9b9;
-  border-radius: 4px;
   background: white;
 }
 
@@ -271,9 +272,12 @@ body {
 .content {
   max-width: 1000px;
   width: 100%;
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-left: 50px;
+  margin-right: 50px;
   font-family: 'Quicksand', sans-serif;
+  font-family: Arial;
+  font-family: 'Noto Sans', sans-serif;
+  color: #0a0a0a;
   line-height: 25px;
 }
 
@@ -328,6 +332,68 @@ img {
 @media (max-width: 550px) {
   .top-subtitle {
     display: none;
+  }
+}
+
+@media (min-width: 1000px) {
+  .post-card {
+    width: 250px;
+  }
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: black;
+  background-color: rgba(77, 15, 15, 0.945);
+  overflow-x: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: white;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #ffffff;
+  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
   }
 }
 /*# sourceMappingURL=styles.css.map */

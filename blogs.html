@@ -1,0 +1,23 @@
+---
+layout: page.hbs
+pageTitle: mastari
+---
+<div class="home-page">
+  <div class="home-title">my
+    Blogs</div>
+  <div class="home-container">
+    <!-- <div class="home-post-header">
+      Blog stuff
+    </div> -->
+    <div class="home-posts-container">
+      {% for post in collections.posts %}
+      <a href="{{ post.url }}" class="post-card-link">
+        <div class="post-card">
+          <h2>{{ post.data.postTitle }}</h2>
+          <em>{{ post.data.postDate }}</em>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</div>

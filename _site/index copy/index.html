@@ -5,29 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles.css" type="text/css">
-    <title>{{pageTitle}}</title>
+    <title>mastari</title>
 </head>
 
 <body>
-    {{!-- <div class="navbar">
-        <div class="nav-title">mastari</div>
-        <div class="nav-subtitle">Math, physics, & philosophy </div>
-    </div> --}}
     <div class="topnav">
         <div class="topnav-colorbar"></div>
         <div class="topnav-content">
             <div class="top-title">MASTARI</div>
-            <div class="top-subtitle">Math, physics, & philosophy</div>
-            <a style="cursor:pointer" onclick="openNav()" href=" #menu" class="menuiconwrapper">≡</a>
-        </div>
-    </div>
-    <div id="mobile-overlay" class="overlay">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <div class="overlay-content">
-            <a href="/">Home</a>
-            <a href="/blogs">Blog</a>
-            <a href="/dreams">Dreamscape</a>
-            <a href="/about">About</a>
+            <div class="top-subtitle">Math, physics, & philosophy</div><a href="#menu" class="menuiconwrapper">≡</a>
         </div>
     </div>
     <div class="page-container">
@@ -52,7 +38,7 @@
                     </a>
                     <a href="/dreams" class="side-link">
                         <div>
-                            <div>Dreamscape</div>
+                            <div>Dreamspace</div>
                             <div class="side-link-right">III</div>
                         </div>
                     </a>
@@ -69,23 +55,48 @@
 
         </div>
         <div class="content-container">
-            <div class="content">
-                <div class="postTitle">{{postTitle}}</div>
-                <div class="postDate">{{postDate}}</div>
-                {{!-- <div class="postAuthor">By {{postAuthor}}</div> --}}
-                {{{content}}}
-            </div>
+            <div class="content"> <div class="home-page">
+  <div class="home-title">my
+    Homepage</div>
+  <div class="home-container">
+    <!-- <div class="home-post-header">
+      Blog stuff
+    </div> -->
+    <div class="home-posts-container">
+      
+      <a href="/posts/blog/blog-post-1/" class="post-card-link">
+        <div class="post-card">
+          <h2>First Yay!</h2>
+          <em>September 9, 2020</em>
+        </div>
+      </a>
+      
+      <a href="/posts/blog/blog-post-2/" class="post-card-link">
+        <div class="post-card">
+          <h2></h2>
+          <em></em>
+        </div>
+      </a>
+      
+      <a href="/posts/blog/blog-post-2 copy/" class="post-card-link">
+        <div class="post-card">
+          <h2></h2>
+          <em></em>
+        </div>
+      </a>
+      
+      <a href="/posts/dream/blog-post-2 copy 2/" class="post-card-link">
+        <div class="post-card">
+          <h2></h2>
+          <em></em>
+        </div>
+      </a>
+      
+    </div>
+  </div>
+</div></div>
         </div>
     </div>
-    <script>
-        function openNav() {
-            document.getElementById("mobile-overlay").style.width = "100%";
-        }
-
-        function closeNav() {
-            document.getElementById("mobile-overlay").style.width = "0%";
-        }
-    </script>
 </body>
 
 </html>
