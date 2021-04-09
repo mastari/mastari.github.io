@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles.css" type="text/css">
-    <title>{{pageTitle}}</title>
+    <title>{{postTitle}}</title>
 </head>
 
 <body>
@@ -24,10 +24,10 @@
     <div id="mobile-overlay" class="overlay">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="overlay-content">
-            <a href="/">Home</a>
-            <a href="/blogs">Blog</a>
-            <a href="/dreams">Dreamscape</a>
-            <a href="/about">About</a>
+            {{!-- <a href="/">Home</a> --}}
+            <a href="/blogs">My thoughts</a>
+            {{!-- <a href="/dreams">Dreamscape</a> --}}
+            <a href="/about">BEHIND YOU</a>
         </div>
     </div>
     <div class="page-container">
@@ -35,31 +35,31 @@
         <div class="side-navbar">
             <div class="side-colorbar"></div>
             <div class="side-content">
-                <div class="side-title">MASTARI</div>
-                <div class="side-subtitle">Math, physics, & philosophy</div>
+                <div class="side-title">We Are All</div>
+                <div class="side-subtitle">just a theory</div>
                 <div class="side-links">
-                    <a href="/" class="side-link">
+                    {{!-- <a href="/" class="side-link">
                         <div>
                             <div>Home</div>
                             <div class="side-link-right">I</div>
                         </div>
-                    </a>
+                    </a> --}}
                     <a href="/blogs" class="side-link">
                         <div>
-                            <div>Blog</div>
-                            <div class="side-link-right">II</div>
+                            <div>My thoughts</div>
+                            <div class="side-link-right">I</div>
                         </div>
                     </a>
-                    <a href="/dreams" class="side-link">
+                    {{!-- <a href="/dreams" class="side-link">
                         <div>
                             <div>Dreamscape</div>
                             <div class="side-link-right">III</div>
                         </div>
-                    </a>
+                    </a> --}}
                     <a href="/about" class="side-link">
                         <div>
-                            <div>About</div>
-                            <div class="side-link-right">IV</div>
+                            <div>BEHIND YOU</div>
+                            <div class="side-link-right">II</div>
                         </div>
                     </a>
                 </div>
@@ -69,7 +69,10 @@
 
         </div>
         <div class="content-container">
-            <div class="content"> {{{content}}}</div>
+            <div class="content">
+                {{!-- <div class="postAuthor">By {{postAuthor}}</div> --}}
+                {{{content}}}
+            </div>
         </div>
     </div>
     <script>
