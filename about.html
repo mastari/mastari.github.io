@@ -2,5 +2,63 @@
 layout: front.hbs
 about: true
 ---
-<h1>The past cannot scare you</h1>
-Silly goose!
+
+<div class="friendly-header">About Creator</div>
+<br />
+<div class="content-container">
+  <div class="content">
+    <div id="side-by-about">
+      <div id="side-me-about" style=""><span
+          style="font-size: 40px; font-family: 'Times New Roman', Times, serif;">H<span
+            style="font-size: 28px;">i</span></span>, I'm Ari <i>(he/him)</i>;
+        the
+        author of
+        Theory Map.<br /> I
+        love to
+        skip and prance
+        through
+        praries
+        when no one is watching.</div>
+      <img class="me_photo" src="/imgs/me_photo.jpg">
+    </div>
+  </div>
+</div>
+<div class="friendly-quote"><a href="#" style="color:rgb(41, 135, 212);">View Resume</a></div>
+<style>
+  #side-by-about {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  #side-me-about {
+    padding-left: 25px;
+    margin-top: 100px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  .me_photo {
+    height: 300px;
+    border-radius: 100%;
+    float: left;
+    margin-right: 30px;
+  }
+
+  @media (max-width: 544px) {
+    #side-by-about {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
+    #side-me-about {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .me_photo {
+      height: 300px;
+      border-radius: 100%;
+      margin: auto;
+    }
+
+  }
+</style>

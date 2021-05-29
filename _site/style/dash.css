@@ -359,6 +359,10 @@
   display: none;
 }
 
+.note:hover > .note-preview > .preview-static {
+  display: block;
+}
+
 .note:hover > .note-preview > .note-preview-gif {
   display: block;
 }
@@ -484,5 +488,13 @@
   font-size: 16px;
   color: #6d6d6d;
   margin-top: 10px;
+}
+
+.preview-static {
+  width: 220px;
+  margin: auto;
+  margin-top: 10px;
+  overflow: hidden;
+  display: block;
 }
 /*# sourceMappingURL=dash.css.map */

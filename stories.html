@@ -2,25 +2,28 @@
 layout: front.hbs
 stories: true
 ---
-<div class="friendly-header">Journey and Growth</div>
-<div class="friendly-quote">"It does not matter how slowly you go as long as you do not stop." (Confucius)</div>
+<div class="friendly-header">Choose A Journey</div>
+<div class="friendly-quote">"To live would be an awfully big adventure." (J.M. Barrie, <i>Peter Pan</i>)</div>
 
-<div class="home-page">
-  <div class="home-title">
-    My thoughts</div>
-  <div class="home-container">
-    <!-- <div class="home-post-header">
-      Blog stuff
-    </div> -->
-    <div class="home-posts-container">
-      {% for post in collections.posts %}
-      <a href="{{ post.url }}" class="post-card-link">
-        <div class="post-card">
-          <h2>{{ post.data.postTitle }}</h2>
-          <em>{{ post.data.postDate }}</em>
-        </div>
-      </a>
-      {% endfor %}
+<div class="note-gallery">
+
+  {% for post in collections.story %}
+  <a href="{{ post.url }}" class="note-link">
+    <div class="note">
+      <div class="note-preview">
+        <!-- <img class="note-preview-gif" src="/imgs/{{ post.data.postGIF }}" alt=""> -->
+        <img class="note-preview-image preview-static" src="/imgs/{{ post.data.postIMG }}" alt="">
+        {{!-- <div class="note-preview-text">Contrary to popular b
+          in a
+
+
+          The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections
+          1.10.32 and 1.10..</div> --}}
+      </div>
+      <div class="note-title">
+        <div class="note-title-text">{{ post.data.postTitle }}</div>
+      </div>
     </div>
-  </div>
+  </a>
+  {% endfor %}
 </div>
