@@ -1,0 +1,257 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.navigation {
+  width: 100%;
+  height: 72px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.navigation > .block-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navigation > .block-container > .navigation-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navigation > .block-container > .navigation-left > a > .navigation-logo {
+  width: 154.8px;
+  height: 38.7px;
+  margin-top: 19px;
+  margin-left: 32px;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+.navigation > .block-container > .navigation-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navigation > .block-container > .navigation-right > .navigation-routes {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  margin: 0px;
+  margin-right: 40px;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+@media only screen and (max-width: 943px) {
+  .navigation > .block-container > .navigation-right > .navigation-routes {
+    display: none;
+  }
+}
+
+.navigation > .block-container > .navigation-right > .navigation-routes > a {
+  text-decoration: none;
+  color: #2b2b2b;
+}
+
+.navigation > .block-container > .navigation-right > .navigation-routes > a > li {
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: font-size 0.1s, color 0.1s;
+  transition: font-size 0.1s, color 0.1s;
+}
+
+.navigation > .block-container > .navigation-right > .navigation-routes > a > li:hover {
+  color: #d6d6d6;
+  -webkit-transition: font-size 0.1s, color 0.1s;
+  transition: font-size 0.1s, color 0.1s;
+}
+
+.navigation > .block-container > .navigation-right > .navigation-account-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navigation > .block-container > .navigation-right > .navigation-account-block > a {
+  text-decoration: none;
+}
+
+.navigation > .block-container > .navigation-right > .navigation-account-block > a > .navigation-account-img {
+  width: 41.6px;
+  height: 41.6px;
+  margin-top: 4.3px;
+  margin-right: 10px;
+}
+
+.navigation > .block-container > .navigation-right > .navigation-account-block > a > .navigation-account-status {
+  text-align: right;
+  height: 100%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: 400;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-right: 25px;
+  color: #292929;
+  font-size: 18px;
+  -webkit-transition: font-size 0.1s, color 0.1s;
+  transition: font-size 0.1s, color 0.1s;
+}
+
+.navigation > .block-container > .navigation-right > .navigation-account-block > a > .navigation-account-status:hover {
+  color: #d6d6d6;
+  -webkit-transition: font-size 0.1s, color 0.1s;
+  transition: font-size 0.1s, color 0.1s;
+}
+
+.navigation > .block-container > .navigation-right > .navigation-account-block > a > .navigation-account-status > .status-login {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  width: 80px;
+  text-align: center;
+}
+
+.navigation > .block-container > .navigation-right > .navigation-account-block > a > .navigation-account-status > .status-login:hover {
+  font-size: 20px;
+}
+
+.nav-active {
+  color: #2c7eeb;
+}
+
+.page {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.block-container {
+  width: 100%;
+}
+
+@media only screen and (min-width: 1200px) {
+  .block-container {
+    width: 1200px;
+  }
+}
+
+.page-block-container {
+  width: 100%;
+  line-height: 2.5em;
+}
+
+@media only screen and (min-width: 0px) {
+  .page-block-container {
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .page-block-container {
+    width: 650px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .page-block-container {
+    width: 700px;
+  }
+}
+
+.content-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.content {
+  max-width: 700px;
+  width: 100%;
+  margin-left: 50px;
+  margin-right: 50px;
+  color: #0a0a0a;
+  line-height: 25px;
+}
+
+@media (max-width: 1000px) {
+  .content {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+
+@media (max-width: 700px) {
+  .content {
+    margin-left: 19px;
+    margin-right: 19px;
+  }
+}
+
+p {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.1em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  font-size: 20px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+/*# sourceMappingURL=style.css.map */

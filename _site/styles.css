@@ -6,7 +6,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 html,
 body {
-  font-family: 'Bitter', serif;
+  font-family: 'Bitter',
+ serif;
   margin: 0px;
   padding: 0px;
   background: #fcfcfc;
@@ -39,7 +40,8 @@ body {
   font-size: 35px;
   margin: 30px;
   font-weight: bold;
-  font-family: 'Bitter', serif;
+  font-family: 'Bitter',
+ serif;
 }
 
 .home-title > span {
