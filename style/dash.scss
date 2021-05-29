@@ -279,10 +279,14 @@
   &>.note-preview>.note-preview-image {
     display:none;
   }
+  &>.note-preview>.preview-static {
+    display: block;
+  }
 
   &>.note-preview>.note-preview-gif {
     display:block;
   }
+
 }
 
 .note-preview {
@@ -403,4 +407,13 @@
   font-size: 16px;
   color: rgb(109, 109, 109);
   margin-top: 10px;
+}
+
+
+.preview-static {
+  width:220px;
+  margin:auto;
+  margin-top: 10px;
+  overflow: hidden;
+  display:block;
 }
