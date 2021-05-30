@@ -5,7 +5,7 @@ before_script:
   - npm install @11ty/eleventy -g
 script: eleventy --pathprefix="/" --formats=md,html,css,jpg
 deploy:
-  fqdn: www.mastari.net
+  fqdn: theorymap.com
   local-dir: _site
   provider: pages
   skip-cleanup: true
