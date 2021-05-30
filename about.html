@@ -8,22 +8,23 @@ about: true
 <div class="content-container">
   <div class="content">
     <div id="side-by-about">
-      <div id="side-me-about" style=""><span style="font-size: 40px; font-family: 'Quattrocento', serif;">H<span
-            style="font-size: 20px; font-family: 'Quattrocento', serif;">ey</span></span>, I'm Ari;
-        the
-        author of
-        Theory Map.<br /> I love crayons, legos, and friends.</div>
+      <div id="side-me-about" style=""><span style="font-size: 35px; font-family: 'firstLetter';">H<span
+            style="font-size: 18px; font-family: 'Quattrocento', serif;">ey</span></span> there, I'm Ari:
+        the enigmatic author.<br /> I love crayons, legos, and friends.</div>
       <img class="me_photo" src="/imgs/me_photo.jpg">
     </div>
   </div>
 </div>
-<div style="margin:auto; width:fit-content; margin-top: 50px;"><a href="#" style="color:rgb(41, 135, 212);">Click For
-    Resume</a></div>
+<div style="margin:auto; width:fit-content; margin-top: 50px;">
+  <a href="#" style="color:rgb(41, 135, 212);">
+    Check out my resume
+  </a>
+</div>
 <style>
   #side-by-about {
     display: flex;
     flex-direction: row-reverse;
-    margin-top: 30px;
+    margin-top: 15px;
 
   }
 
@@ -31,7 +32,13 @@ about: true
     padding-left: 25px;
     margin-top: 100px;
     font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;
     width: 300px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 30px;
+    padding-left: 45px;
+    height: 60px;
   }
 
   .me_photo {
@@ -41,7 +48,7 @@ about: true
     margin-right: 30px;
   }
 
-  @media (max-width: 544px) {
+  @media (max-width: 680px) {
     #side-by-about {
       display: flex;
       flex-direction: column-reverse;
@@ -53,6 +60,7 @@ about: true
       padding-left: 0px;
       margin-left: auto;
       margin-right: auto;
+      padding-left: 30px;
     }
 
     .me_photo {

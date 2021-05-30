@@ -2,6 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap');
+@font-face {
+  font-family: 'firstLetter';
+  src:  url('./../fonts/first_letter.ttf') format('truetype');
+}
 // font-family: 'Rajdhani', sans-serif;
 // font-family: 'Source Sans Pro', sans-serif;
 html,
@@ -41,6 +45,12 @@ body {
             height: 3px * 10.9;
           }
           @media only screen and (max-width: 943px) {
+
+          }
+          @media only screen and (max-width: 503px) {
+            width: 12px * 8.9;
+            height: 3px * 8.9;
+            margin-top:24px;
             margin-left: 10px;
           }
           // filter: brightness(1050%);
