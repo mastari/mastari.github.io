@@ -36,7 +36,13 @@ body {
           height: 3px * 12.9;
           margin-top: 19px;
           margin-left: 32px;
-          transition: 0.1s;
+          @media only screen and (max-width: 1200px) {
+            width: 12px * 10.9;
+            height: 3px * 10.9;
+          }
+          @media only screen and (max-width: 943px) {
+            margin-left: 10px;
+          }
           // filter: brightness(1050%);
         }
 

@@ -47,8 +47,19 @@ body {
   height: 38.7px;
   margin-top: 19px;
   margin-left: 32px;
-  -webkit-transition: 0.1s;
-  transition: 0.1s;
+}
+
+@media only screen and (max-width: 1200px) {
+  .navigation > .block-container > .navigation-left > a > .navigation-logo {
+    width: 130.8px;
+    height: 32.7px;
+  }
+}
+
+@media only screen and (max-width: 943px) {
+  .navigation > .block-container > .navigation-left > a > .navigation-logo {
+    margin-left: 10px;
+  }
 }
 
 .navigation > .block-container > .navigation-right {
