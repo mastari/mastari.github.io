@@ -395,10 +395,11 @@
 
 .friendly-header {
   text-align: center;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 30px;
   color: rgb(24, 24, 24);
   margin-top: 0px;
+  font-family: 'Quattrocento', serif;
 }
 
 .friendly-quote {
@@ -431,9 +432,16 @@
 
 @media only screen and (max-width: 750px) {
   .friendly-header {
-    font-size: 20px;
+    font-size: 24px;
+    // font-weight: 400;
   }
   .friendly-quote { 
-     font-size: 12px;
+    //  font-size: 15px;
+    padding-left:40px;
+    padding-right:40px;
   }
+}
+
+@media only screen and (max-width: 400px) {
+  
 }
