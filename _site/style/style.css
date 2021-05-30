@@ -84,6 +84,8 @@ body {
 
 @media only screen and (max-width: 503px) {
   .navigation > .block-container > .navigation-right > .navigation-routes {
+    padding: 0px;
+    margin: 0px;
     font-size: 13px;
   }
 }
