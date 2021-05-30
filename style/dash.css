@@ -335,12 +335,15 @@
   height: 270px;
   color: #4e4e4e;
   padding: 0px;
+  border-radius: 3px;
+  -webkit-box-shadow: inset 0 0 0 0.8px rgba(206, 206, 206, 0.651);
+          box-shadow: inset 0 0 0 0.8px rgba(206, 206, 206, 0.651);
 }
 
 .note:hover {
   border-radius: 3px;
-  -webkit-box-shadow: inset 0 0 0 0.8px #cecece;
-          box-shadow: inset 0 0 0 0.8px #cecece;
+  -webkit-box-shadow: inset 0 0 0 0.8px #50a4e9;
+          box-shadow: inset 0 0 0 0.8px #50a4e9;
 }
 
 .note:hover > .note-title {
