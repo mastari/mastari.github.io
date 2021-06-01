@@ -5,7 +5,7 @@ postAuthor: Ari
 postIMG: "fa.jpg"
 postGIF: "first.gif"
 ---
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque viverra laoreet lectus. Sed interdum sodales lorem, eu facilisis lorem lobortis vel. Nullam ac justo vitae nisi sagittis tempus eget nec nisi. Duis in aliquet sem. Nam vel lacinia arcu, sed consectetur lectus. Quisque felis elit, pretium ut mi et, pulvinar pharetra dui. Cras dignissim placerat quam a auctor.
+Quisque viverra laoreet lectus. Sed interdum sodales lorem, eu facilisis lorem lobortis vel. Nullam ac justo vitae nisi sagittis tempus eget nec nisi. Duis in aliquet sem. Nam vel lacinia arcu, sed consectetur lectus. Quisque felis elit, pretium ut mi et, pulvinar pharetra dui. Cras dignissim placerat quam a auctor.
 ### Why Does It Attract?
 Nullam ac sodales tortor, a venenatis velit. Proin est eros, pulvinar et sem ac, pharetra elementum mauris. Nulla vehicula risus non quam tincidunt cursus. Nulla facilisi. Nam tempor maximus pulvinar. Mauris tempus nisl porttitor nunc ultrices facilisis. Nunc tincidunt bibendum nisi. Aenean interdum dui nisi, sed vestibulum augue luctus sed. Aliquam eleifend facilisis tellus a scelerisque. Maecenas dignissim massa vitae posuere aliquet. Curabitur eu turpis at sem ultrices volutpat non et dui.
 
